@@ -4,11 +4,25 @@
   // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    
     {
-      "type": "pwa-chrome",
+      "name": "Attach to Edge",
+      "port": 9222,
+      "request": "attach",
+      "type": "msedge",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
       "request": "launch",
       "name": "Launch Chrome against localhost",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "Abrir Firefox en localhost",
       "url": "http://localhost:8080",
       "webRoot": "${workspaceFolder}"
     }
