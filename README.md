@@ -8,3 +8,4 @@ Portafolio-CV
 
 ### 
 ![logo_whatsap_.png](https://O-Sergio274.github.io/Portafolio/assets/logo_whatsap_.png)
+<img src="./assets/logo_whatsap_.png" width=600 heigth=300>
