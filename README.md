@@ -8,3 +8,4 @@ Portafolio-CV
 
 ### 
 <img src="./assets/logo_whatsap_.png" width=600 heigth=300>
+
