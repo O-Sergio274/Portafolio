@@ -1,5 +1,5 @@
 /* ************** MENU ************ */
-/*((d) => {
+((d) => {
   const $btnMenu = d.querySelector(".menu-btn"),
     $menu = d.querySelector(".menu");
 
@@ -15,24 +15,7 @@
     $btnMenu.lastElementChild.classList.add("none");
     $menu.classList.remove("is-active");
   });
-})(document);*/
-/*--------------------------------------------------------------------*/
-// Seleccionamos el botón del menú y el menú en sí
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('#main-menu');
-
-// Verificamos que ambos elementos existan antes de agregar el evento
-if (menuBtn && menu) {
-  menuBtn.addEventListener('click', () => {
-    // Alternamos la clase 'is-active' en el menú
-    menu.classList.toggle('is-active');
-
-    // Actualizamos el atributo aria-expanded para accesibilidad
-    const expanded = menu.classList.contains('is-active');
-    menuBtn.setAttribute('aria-expanded', expanded);
-  });
-}
-
+})(document);
 
 /* ****************** CONTACTACFORM ****************** */
 ((d) => {
