@@ -301,37 +301,16 @@ p {
 }
 
 /* **********  MENU     *********** */
-/*.menu-btn {
+.menu-btn {
   outline: thin solid var(--first-color);
   border: 0;
   cursor: pointer;
   background-color: var(--second-color);
-}*/
-
-
-/*--------------------------------------------------------------------*/
-
-/*.menu-btn {
-  outline: thin solid var(--first-color);
-  border: 0;
-  cursor: pointer;
-  background-color: var(--second-color);
-  padding: 0.75rem 1rem;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.menu-btn:hover {
-  background-color: var(--first-color);
-  color: #fff;
 }
 
 .menu-btn svg {
   fill: #dc5736;
 }
-
-
-*/
 
 .menu-btn {
   outline: thin solid var(--first-color);
@@ -348,10 +327,6 @@ p {
   background-color: var(--first-color);
   color: #fff;
 }
-
-
-
-
 
 .menu {
   position: fixed;
@@ -800,5 +775,6 @@ footer {
     grid-column: span 3;
   }
 }
+
 
 
