@@ -51,3 +51,10 @@
       });
   });
 })(document);
+/* ****************** FOOTER - COPYRIGHT YEAR ****************** */
+((d) => {
+  const $year = d.getElementById("current-year");
+  if ($year) {
+    $year.textContent = new Date().getFullYear();
+  }
+})(document);
