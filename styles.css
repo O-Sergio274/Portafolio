@@ -791,94 +791,33 @@ progress::-moz-progress-bar {
   }
 }
 
-/* ESTILOS CV MODAL MODERNO */
-.cv-modal-container {
-    background: #fcf8f8;
-    max-width: 900px;
-    width: 95%;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+/* --- FIX PARA EL MODAL CV --- */
+
+/* Hace que el modal sea visible cuando el link tiene el ID #modal-cv */
+#modal-cv:target {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.cv-layout {
-    display: flex;
-    flex-wrap: wrap; /* Responsivo automático */
-    max-height: 85vh;
-    overflow-y: auto;
+/* Ajuste para que el contenido sea legible y scrolleable en celulares */
+.portfolio-modal {
+  background-color: var(--white-color);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
 }
 
-.cv-sidebar {
-    flex: 1 1 300px;
-    background-color: #14192d;
-    color: white;
-    padding: 3rem 2rem;
-    text-align: center;
+.portfolio-info h3 {
+  border-bottom: 2px solid var(--first-color);
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
-.cv-avatar {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid #dc5736;
-    margin-bottom: 1.5rem;
-    object-fit: cover;
-}
-
-.cv-main-content {
-    flex: 2 1 400px;
-    padding: 3rem;
-    background: white;
-    text-align: left;
-}
-
-.section-subtitle {
-    color: #dc5736;
-    border-left: 4px solid #dc5736;
-    padding-left: 10px;
-    margin: 1.5rem 0 1rem;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 1px;
-}
-
-.cv-badges span {
-    display: inline-block;
-    background: #eee;
-    padding: 5px 12px;
-    margin: 4px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    color: #333;
-    font-weight: bold;
-}
-
-.cv-project-item {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px dashed #ddd;
-}
-
-.cv-footer-link {
-    margin-top: 2.5rem;
-    padding: 1.5rem;
-    background: #f9f9f9;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.btn-github-cv {
-    display: inline-block;
-    background: #24292e;
-    color: white !important;
-    padding: 0.8rem 1.2rem;
-    margin-top: 10px;
-    font-size: 0.8rem;
-    border-radius: 5px;
-}
-
-/* Ajustes para móviles */
-@media (max-width: 768px) {
-    .cv-main-content { padding: 2rem; }
-    .cv-sidebar { padding: 2rem; }
+/* Botón de cierre más visible */
+.modal-close {
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
