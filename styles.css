@@ -801,7 +801,7 @@ progress::-moz-progress-bar {
 
 /* Ajuste para que el contenido sea legible y scrolleable en celulares */
 .portfolio-modal {
-  background-color: var(--white-color);
+  background-color: #37474f;
   max-height: 90vh;
   overflow-y: auto;
   border-radius: 10px;
