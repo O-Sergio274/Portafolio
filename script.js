@@ -16,6 +16,7 @@
     $menu.classList.remove("is-active");
   });
 })(document);
+
 /* ****************** CONTACTACFORM ****************** */
 ((d) => {
   const $form = d.querySelector(".contact-form");
@@ -49,4 +50,11 @@
         }, 3000);
       });
   });
+})(document);
+/* ****************** FOOTER - COPYRIGHT YEAR ****************** */
+((d) => {
+  const $year = d.getElementById("current-year");
+  if ($year) {
+    $year.textContent = new Date().getFullYear();
+  }
 })(document);
