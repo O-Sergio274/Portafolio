@@ -54,7 +54,7 @@ a:hover {
 
 h1 {
   margin: 0;
-  font-size: 2 rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -64,7 +64,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 1.25;
+  font-size: 1.25rem;
 }
 
 h4 {
@@ -204,7 +204,7 @@ p {
 .contact-form textarea {
   font-size: 1.5rem;
   font-family: var(--font);
-  font-weight: 800;
+  font-weight: 600;
   background-color: #7f80855e;
   color: #e4d2d2;
 }
@@ -232,7 +232,8 @@ p {
 }
 
 .contact-form *::placeholder {
-  color: var(--gray-dark-color);
+  color: #100e0e;
+  font-size:1.15rem;
 }
 
 .contact-form-response {
@@ -658,9 +659,11 @@ progress::-moz-progress-bar {
   pointer-events: auto;
 }
 
-.portfolio-card-info>div {
+.portfolio-card-info > div {
   padding: 1rem;
-  border: 1px solid var(--white-color);
+  /* border: 1px solid var(--white-color); */
+  background: #eebcf1cc;
+  color:#0d0d0eeb;
 }
 
 .portfolio-modal {
@@ -673,7 +676,7 @@ progress::-moz-progress-bar {
 
 .portfolio-modal h3 {
   border-bottom: 3px solid var(--first-color);
-  color: var(--title-color);
+  color:#c3d7ef;
   margin: 1rem auto;
   padding: 0.5rem 0;
 }
@@ -801,10 +804,13 @@ progress::-moz-progress-bar {
 
 /* Ajuste para que el contenido sea legible y scrolleable en celulares */
 .portfolio-modal {
-  background-color: #37474f;
+  background-color: #0c0837f5;
   max-height: 90vh;
   overflow-y: auto;
+  color:white;
   border-radius: 10px;
+  font-size:medium; 
+  gap:3rem;
 }
 
 .portfolio-info h3 {
@@ -820,4 +826,30 @@ progress::-moz-progress-bar {
   padding: 5px;
   display: flex;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+/* estilos del div de el modal de visita al repositorio */
+
+/* Contenedor del repositorio */
+.repo-container {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #eebcf1cc;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.repo-text {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #0d0d0eeb;
+    font-weight: 700;
+}
+
+.repo-button {
+    width: auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    display: inline-block;
+    /* Asegura que el padding funcione correctamente */
+    text-decoration: none;
 }
