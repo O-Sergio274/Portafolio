@@ -1,3 +1,5 @@
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+document.addEventListener("copy", (event) => event.preventDefault());
 /* ************** MENU ************ */
 ((d) => {
   const $btnMenu = d.querySelector(".menu-btn"),
@@ -39,9 +41,8 @@
         console.log(err);
         let message =
           err.statusText || "Ocurrio un error al enviar, intenta nuevamente";
-        $response.querySelector(
-          "h3"
-        ).innerHTML = `Error ${err.status} : ${message}`;
+        $response.querySelector("h3").innerHTML =
+          `Error ${err.status} : ${message}`;
       })
       .finally(() => {
         $loader.classList.add("none");

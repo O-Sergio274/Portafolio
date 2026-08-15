@@ -41,6 +41,9 @@ body {
     overflow-x: hidden;
     color: var(--text-color);
     background-color: #e4d2d2;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }
 
 a {
