@@ -205,8 +205,8 @@ p {
   font-size: 1.5rem;
   font-family: var(--font);
   font-weight: 600;
-  background-color: #7f80855e;
-  color: #e4d2d2;
+  background-color: #53545ccf;
+  color: #161616;
 }
 
 .contact-form input {
@@ -232,7 +232,7 @@ p {
 }
 
 .contact-form *::placeholder {
-  color: #100e0e;
+  color: #2a2828;
   font-size:1.15rem;
 }
 
